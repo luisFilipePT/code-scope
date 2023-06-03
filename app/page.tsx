@@ -1,39 +1,36 @@
-import Link from "next/link"
+import { aiReview, type TOut } from "@/ai"
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { ReadMe } from "@/components/Home/readMe"
+import { ReviewArea } from "@/components/Home/reviewArea"
 
-export default function IndexPage() {
+export default function Home() {
+  async function reviewCode(code: string): Promise<TOut | undefined> {
+    "use server"
+    return aiReview(code)
+  }
+
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Beautifully designed components <br className="hidden sm:inline" />
-          built with Radix UI and Tailwind CSS.
-        </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Accessible and customizable components that you can copy and paste
-          into your apps. Free. Open Source. And Next.js 13 Ready.
+    <>
+      <section className="container grid items-center gap-6 pt-6 md:py-10">
+        <div className="flex flex-col sm:flex-row">
+          <div className="flex max-w-[980px] flex-col items-start gap-2">
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+              ✨ AI-powered code analysis.
+              <br className="hidden sm:inline" />
+              &nbsp;Analyze your code and unlock its potential.
+            </h1>
+          </div>
+          <div className="mx-auto pt-4 sm:pt-0">
+            <ReadMe />
+          </div>
+        </div>
+      </section>
+      <ReviewArea reviewCode={reviewCode} />
+      <section className="container inset-x-0 bottom-0 my-4 flex items-center justify-center p-4 sm:fixed">
+        <p className="text-xs text-muted-foreground">
+          © 2023 Luis Oliveira. All rights reserved.
         </p>
-      </div>
-      <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

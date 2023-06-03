@@ -1,10 +1,12 @@
 import * as React from "react"
+import Image from "next/image"
 import Link from "next/link"
 
 import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
+
+import logo from "../public/logo.png"
 
 interface MainNavProps {
   items?: NavItem[]
@@ -13,8 +15,11 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="h-6 w-6" />
+      <Link
+        href="https://luis-oliveira.vercel.app/"
+        className="flex items-center space-x-2"
+      >
+        <Image src={logo} alt="Logo of the author" priority width={24} />
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </Link>
       {items?.length ? (
