@@ -10,8 +10,7 @@
 </h1>
 
 <h3 align="center">
-  AI-powered code analysis.
- Analyze your code and unlock its potential.
+  ✨ AI-powered code analysis. Analyse your code and unlock its potential.
 </h3>
 
 ## About project
