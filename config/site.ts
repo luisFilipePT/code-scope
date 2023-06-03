@@ -2,7 +2,8 @@ export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
   name: "Code Scope",
-  description: "✨ AI-powered code analysis",
+  description:
+    "✨ AI-powered code analysis. Analyze your code and unlock its potential.",
   mainNav: [
     {
       title: "Home",
@@ -15,6 +16,6 @@ export const siteConfig = {
   ],
   links: {
     twitter: "https://twitter.com/_luisFilipePT",
-    github: "https://github.com/luisFilipePT",
+    github: "https://github.com/luisFilipePT/code-scope",
   },
 }

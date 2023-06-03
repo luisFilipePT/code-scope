@@ -25,7 +25,7 @@ export function ReviewArea({ reviewCode }: CodeProps) {
   const { toast } = useToast()
   async function submitCode(code: string) {
     const res = await reviewCode(code)
-    console.log("res", res)
+
     if (!res) {
       toast({
         variant: "destructive",
@@ -33,7 +33,10 @@ export function ReviewArea({ reviewCode }: CodeProps) {
         description: "Sorry 🙇🏼. Can you open an issue please 🙏🏼?",
         action: (
           <ToastAction altText="Goto schedule to undo">
-            <Link href="https://github.com/" passHref>
+            <Link
+              href="https://github.com/luisFilipePT/code-scope/issues"
+              passHref
+            >
               <Button>Open Issue</Button>
             </Link>
           </ToastAction>
@@ -44,10 +47,8 @@ export function ReviewArea({ reviewCode }: CodeProps) {
     }
   }
 
-  console.log(review)
-
   return (
-    <section className="container grid grid-cols-1 sm:grid-cols-2 gap-6 py-8">
+    <section className="container grid grid-cols-1 gap-6 py-8 sm:grid-cols-2">
       <Code reviewCode={submitCode} />
       <div className="grid grid-cols-1 gap-4">
         <BigO data={review?.bigO} />

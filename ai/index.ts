@@ -28,7 +28,7 @@ CODE: {code}`
       inputVariables: ["code"],
     })
   } catch (e) {
-    console.error("Something went wrong creating the prompt")
+    console.error("Something went wrong creating the prompt", e)
   }
 }
 
@@ -45,7 +45,7 @@ function buildModel() {
       n: 1,
     })
   } catch (e) {
-    console.error("Something went wrong building the model")
+    console.error("Something went wrong building the model", e)
   }
 }
 
@@ -85,7 +85,7 @@ export async function aiReview(code: string): Promise<TOut | undefined> {
 
   try {
     const prompt = createPrompt()
-    console.log("prompt - ", prompt)
+    // console.log("prompt - ", prompt)
 
     const llm = buildModel()
 
@@ -96,13 +96,13 @@ export async function aiReview(code: string): Promise<TOut | undefined> {
     const chain = new LLMChain({ llm, prompt })
 
     const res = await chain.call({ code })
-    console.log("result - ", res)
+    // console.log("result - ", res)
 
     const out = parseResponse(res.text)
 
-    console.log("out - ", out)
+    // console.log("out - ", out)
     return out
   } catch (e) {
-    console.error("Something went wrong in the AI review")
+    console.error("Something went wrong in the AI review", e)
   }
 }
