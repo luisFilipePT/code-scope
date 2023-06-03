@@ -16,6 +16,21 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  twitter: {
+    site: "https://code-scope.vercel.app/",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    creator: "@_luisFilipePT",
+    images: ["../public/og.png"],
+  },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ["../public/og.png"],
+    authors: ["Luis Filipe"],
+    url: "https://code-scope.vercel.app/",
+    locale: "en_GB",
+  },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },

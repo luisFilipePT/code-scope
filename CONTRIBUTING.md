@@ -1,4 +1,4 @@
-# Contributing to Code Scope - AI-powered code analysis. Analyze your code and unlock its potential.
+# Contributing to Code Scope - AI-powered code analysis. Analyse your code and unlock its potential.
 
 🎉🚀🙌🏻 First off, thanks for taking the time to contribute! 🙌🏻🚀🎉
 

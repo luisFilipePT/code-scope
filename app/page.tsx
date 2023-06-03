@@ -17,7 +17,7 @@ export default function Home() {
             <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
               ✨ AI-powered code analysis.
               <br className="hidden sm:inline" />
-              &nbsp;Analyze your code and unlock its potential.
+              &nbsp;Analyse your code and unlock its potential.
             </h1>
           </div>
           <div className="mx-auto pt-4 sm:pt-0">
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       <ReviewArea reviewCode={reviewCode} />
-      <section className="container inset-x-0 bottom-0 my-4 flex items-center justify-center p-4">
+      <section className="container inset-x-0 bottom-0 flex items-center justify-center p-4">
         <p className="text-xs text-muted-foreground">
           © 2023 Luis Oliveira. All rights reserved.
         </p>

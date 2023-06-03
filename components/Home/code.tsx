@@ -90,7 +90,7 @@ export function Code({ reviewCode }: CodeProps) {
                     Please wait
                   </>
                 ) : (
-                  <span>Analise</span>
+                  <span>Analyse</span>
                 )}
               </Button>
             </p>

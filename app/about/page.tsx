@@ -9,7 +9,7 @@ export default function About() {
             <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
               ✨ (alpha) AI-powered code analysis.
               <br className="hidden sm:inline" />
-              Analyze your code and unlock its potential.
+              Analyse your code and unlock its potential.
             </h1>
           </div>
         </div>

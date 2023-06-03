@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig
 export const siteConfig = {
   name: "Code Scope",
   description:
-    "✨ AI-powered code analysis. Analyze your code and unlock its potential.",
+    "✨ AI-powered code analysis. Analyse your code and unlock its potential.",
   mainNav: [
     {
       title: "Home",
