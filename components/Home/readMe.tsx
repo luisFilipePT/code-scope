@@ -14,7 +14,9 @@ export function ReadMe() {
         </p>
         <p>
           Before you start please read the
-          <Link href="/about">&nbsp;about&nbsp;</Link>
+          <Link className="text-cyan-700" href="/about">
+            &nbsp;about&nbsp;
+          </Link>
           page.
         </p>
       </AlertDescription>

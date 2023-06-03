@@ -100,7 +100,11 @@ export async function aiReview(code: string): Promise<TOut | undefined> {
 
     const out = parseResponse(res.text)
 
-    // console.log("out - ", out)
+    console.info({
+      message: "Successful completion",
+      code,
+      out,
+    })
     return out
   } catch (e) {
     console.error("Something went wrong in the AI review", e)

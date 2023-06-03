@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       <ReviewArea reviewCode={reviewCode} />
-      <section className="container inset-x-0 bottom-0 my-4 flex items-center justify-center p-4 sm:fixed">
+      <section className="container inset-x-0 bottom-0 my-4 flex items-center justify-center p-4">
         <p className="text-xs text-muted-foreground">
           © 2023 Luis Oliveira. All rights reserved.
         </p>
