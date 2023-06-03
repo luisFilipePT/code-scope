@@ -1,30 +1,60 @@
-# Code Scope
+[![Code Scope released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-This is a simple web app to play around with OpenAI's GPT-3 language model.
+<h1 align="center">
+  Code Scope
+</h1>
 
-## Installation
-To install and run the app, follow these steps:
-	1.	Clone the repository to your local machine.
-	2.	Install the dependencies by running npm install.
-	3.	Create a local.env file in the root directory of the project and add your OpenAI API key as follows:
-OPENAI_API_KEY=YOUR_API_KEY_HERE
-	4.	Start the app by running npm start.
-	5.	Open a web browser and navigate to http://localhost:3000.
+<h3 align="center">
+  AI-powered code analysis.
+ Analyze your code and unlock its potential.
+</h3>
 
-## Usage
-To use the app, simply enter some text in the input field and click the "Generate" button. The app will send the input text to the OpenAI API and receive a generated text response, which it will display on the page.
-Please note that the app is currently in alpha and should be used at your own risk. The app uses OpenAI to power its machine learning algorithms, which means that any data you submit to the app is also submitted to OpenAI. We take your privacy and security seriously and will do our best to ensure that your data is handled responsibly and securely.
-If you encounter any issues or have any feedback or suggestions for the app, please feel free to open an issue on GitHub or send us a message on Twitter.
+## About project
 
-## Contributing
-We welcome contributions to the app! If you would like to contribute, please follow these steps:
-	1.	Fork the repository to your own GitHub account.
-	2.	Create a new branch for your changes.
-	3.	Make your changes and commit them to your branch.
-	4.	Push your branch to your forked repository.
-	5.	Open a pull request to the main repository.
-We will review your changes and merge them if they meet our standards and guidelines.
+Play around with AI
 
-## License
+## What’s In This Document
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+- [How to Contribute](#-how-to-contribute)
+- [License](#memo-license)
+- [Thanks to Our Contributors](#-thanks)
+
+## ❗ Code of Conduct
+
+We expect everyone to abide by our [**Code of Conduct**](./CODE_OF_CONDUCT.md). Please read it. 🤝
+
+## 🙌🏻 How to Contribute
+
+Check out our [**Contributing Guide**](./CONTRIBUTING.md) for information on contributing.
+
+## :memo: License
+
+Licensed under the [MIT License](./LICENSE).
+
+## 💜 Thanks
+
+Thanks to everyone contributing in any manner for this repo and we extend this thanks to everyone working on Open Source.
+
+**Sharing is Caring**
+
+## Contributors ✨
+
+Thank's goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
