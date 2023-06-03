@@ -10,6 +10,8 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
+import og from "../public/og.png"
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -21,12 +23,12 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     creator: "@_luisFilipePT",
-    images: ["../public/og.png"],
+    images: [og.src],
   },
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ["../public/og.png"],
+    images: [og.src],
     authors: ["Luis Filipe"],
     url: "https://code-scope.vercel.app/",
     locale: "en_GB",
