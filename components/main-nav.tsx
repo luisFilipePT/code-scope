@@ -18,7 +18,7 @@ export function MainNav({ items }: MainNavProps) {
       <Link href="https://luis-oliveira.vercel.app/">
         <Image src={logo} alt="Logo of the author" priority width={24} />
       </Link>
-      <Link href="/">
+      <Link href="/" prefetch={false}>
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </Link>
       {items?.length ? (
@@ -28,6 +28,7 @@ export function MainNav({ items }: MainNavProps) {
               item.href && (
                 <Link
                   key={index}
+                  prefetch={false}
                   href={item.href}
                   className={cn(
                     "flex items-center text-sm font-medium text-muted-foreground",
