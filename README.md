@@ -9,6 +9,8 @@
   Code Scope
 </h1>
 
+<img src="./public/og.jpg">
+
 <h3 align="center">
   ✨ AI-powered code analysis. Analyse your code and unlock its potential.
 </h3>

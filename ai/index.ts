@@ -27,7 +27,7 @@ CODE: {code}`
       inputVariables: ["code"],
     })
   } catch (e) {
-    console.error("Something went wrong creating the prompt", e)
+    console.error("Error: Something went wrong creating the prompt", e)
   }
 }
 
@@ -44,7 +44,7 @@ function buildModel() {
       n: 1,
     })
   } catch (e) {
-    console.error("Something went wrong building the model", e)
+    console.error("Error: Something went wrong building the model", e)
   }
 }
 
@@ -99,12 +99,12 @@ export async function aiReview(code: string): Promise<TOut | undefined> {
 
     const out = parseResponse(res.text)
 
-    // console.log("Successful completion", {
-    //   code,
-    //   out,
-    // })
+    console.log("Successful completion", {
+      code,
+      out,
+    })
     return out
   } catch (e) {
-    console.error("Something went wrong in the AI review", e)
+    console.error("Error: Something went wrong in the AI review", e)
   }
 }
