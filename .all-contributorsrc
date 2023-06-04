@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "luisFilipePT",
+      "name": "Luis Filipe",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9373787?v=4",
+      "profile": "https://luis-oliveira.vercel.app/",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "review",
+        "maintenance"
+      ]
+    },
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "code-scope",
+  "projectOwner": "luisFilipePT",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+}
