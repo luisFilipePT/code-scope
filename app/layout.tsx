@@ -1,4 +1,5 @@
 import "@/styles/globals.css"
+
 import { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 
@@ -23,12 +24,12 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     creator: "@_luisFilipePT",
-    images: [og.src],
+    images: og.src,
   },
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [og.src],
+    images: og.src,
     authors: ["Luis Filipe"],
     url: "https://code-scope.vercel.app/",
     locale: "en_GB",
