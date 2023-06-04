@@ -29,7 +29,7 @@
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "langchain": "^0.0.90",
-    "lucide-react": "0.234.0",
+    "lucide-react": "0.235.0",
     "next": "^13.4.4",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
@@ -41,6 +41,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.26.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@types/node": "^17.0.45",
     "@types/react": "^18.2.7",
