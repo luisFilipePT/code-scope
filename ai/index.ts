@@ -7,20 +7,17 @@ function createPrompt() {
   const template = `
 Act as a software engineer reviewing the following code. Analyze the code in terms of Big O notation, security, bugs, readability and performance.
 
-Provide feedback in JSON format with the following structure where all keys are mandatory:
+Provide your output in json format with the following structure where all keys are mandatory:
 
 {{
   bigO: {{ time: string, space: string }},
-  security: string,
-  bugs: string,
-  readability: string,
-  performance: string,
+  security: insert security review here,
+  bugs: insert bugs review here,
+  readability: insert readability review here,
+  performance: insert performance review here,
 }}
 
-Note the following:
-
--  Your feedback should be detailed and specific, with examples where possible.
--  Do NOT output any text other than the JSON.
+- Output should be only a valid JSON object. Dont include any other text or explanation.
 
 CODE: {code}`
 
@@ -102,10 +99,10 @@ export async function aiReview(code: string): Promise<TOut | undefined> {
 
     const out = parseResponse(res.text)
 
-    console.log("Successful completion", {
-      code,
-      out,
-    })
+    // console.log("Successful completion", {
+    //   code,
+    //   out,
+    // })
     return out
   } catch (e) {
     console.error("Something went wrong in the AI review", e)
