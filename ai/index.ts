@@ -5,10 +5,9 @@ import { z } from "zod"
 
 function createPrompt() {
   const template = `
-Act as the best software engineer in the world helping a developer review his code.
-Please deep analyse the following code in terms of Big O notation, security, bugs, readability, and performance.
+Act as a software engineer reviewing the following code. Analyze the code in terms of Big O notation, security, bugs, readability and performance.
 
-Provide the response in JSON format with this structure all keys are mandatory:
+Provide feedback in JSON format with the following structure where all keys are mandatory:
 
 {{
   bigO: {{ time: string, space: string }},
@@ -18,7 +17,10 @@ Provide the response in JSON format with this structure all keys are mandatory:
   performance: string,
 }}
 
-Do NOT output any text other than the JSON
+Note the following:
+
+-  Your feedback should be detailed and specific, with examples where possible.
+-  Do NOT output any text other than the JSON.
 
 CODE: {code}`
 
@@ -100,8 +102,7 @@ export async function aiReview(code: string): Promise<TOut | undefined> {
 
     const out = parseResponse(res.text)
 
-    console.info({
-      message: "Successful completion",
+    console.log("Successful completion", {
       code,
       out,
     })
