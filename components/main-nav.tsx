@@ -15,11 +15,10 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link
-        href="https://luis-oliveira.vercel.app/"
-        className="flex items-center space-x-2"
-      >
+      <Link href="https://luis-oliveira.vercel.app/">
         <Image src={logo} alt="Logo of the author" priority width={24} />
+      </Link>
+      <Link href="/">
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </Link>
       {items?.length ? (

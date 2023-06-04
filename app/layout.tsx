@@ -10,7 +10,7 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
-import og from "../public/og.png"
+import og from "../public/og.jpg"
 
 export const metadata: Metadata = {
   title: {

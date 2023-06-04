@@ -78,16 +78,16 @@ function mockAiReviewResponse(): Promise<TOut | undefined> {
   })
 }
 
+const prompt = createPrompt()
+// console.log("prompt - ", prompt)
+
+const llm = buildModel()
+
 export async function aiReview(code: string): Promise<TOut | undefined> {
   "use server"
 
-  // return mockAiReviewResponse()
-
   try {
-    const prompt = createPrompt()
-    // console.log("prompt - ", prompt)
-
-    const llm = buildModel()
+    // return mockAiReviewResponse()
 
     if (!prompt || !llm) {
       return

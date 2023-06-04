@@ -6,10 +6,6 @@ export const siteConfig = {
     "✨ AI-powered code analysis. Analyse your code and unlock its potential.",
   mainNav: [
     {
-      title: "Home",
-      href: "/",
-    },
-    {
       title: "About",
       href: "/about",
     },
