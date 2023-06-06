@@ -19,7 +19,11 @@ Provide your output in json format with the following structure where all keys a
 
 - Output should be only a valid JSON object. Dont include any other text or explanation.
 
-CODE: {code}`
+CODE TO REVIEW:
+\`\`\`
+{code}
+\`\`\`
+`
 
   try {
     return new PromptTemplate({
