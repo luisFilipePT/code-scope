@@ -44,7 +44,7 @@ function buildModel() {
       topP: 1,
       frequencyPenalty: 0,
       presencePenalty: 0,
-      maxTokens: 1024,
+      maxTokens: 512,
       n: 1,
     })
   } catch (e) {

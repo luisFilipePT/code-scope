@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { aiReview, type TOut } from "@/ai"
 
 import { ReadMe } from "@/components/Home/readMe"
@@ -28,7 +29,8 @@ export default function Home() {
       <ReviewArea reviewCode={reviewCode} />
       <section className="container inset-x-0 bottom-0 flex items-center justify-center p-4">
         <p className="text-xs text-muted-foreground">
-          © 2023 Luis Oliveira. All rights reserved.
+          © 2023 <Link href="https://www.luisfilipept.com/">Luis Oliveira</Link>
+          . All rights reserved.
         </p>
       </section>
     </>

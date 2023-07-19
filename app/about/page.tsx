@@ -109,8 +109,8 @@ export default function About() {
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             Well, you can get to know me{" "}
-            <Link href="https://luis-oliveira.vercel.app/">here.</Link>. I just
-            got into AI 🐑 and that&apos;s the why of this 😊
+            <Link href="https://www.luisfilipept.com/">here.</Link>. I just got
+            into AI 🐑 and that&apos;s the why of this 😊
           </p>
         </div>
       </section>

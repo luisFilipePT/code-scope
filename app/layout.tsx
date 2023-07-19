@@ -11,8 +11,6 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
-import og from "../public/og.jpg"
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -23,25 +21,41 @@ export const metadata: Metadata = {
     site: "https://code-scope.vercel.app/",
     title: siteConfig.name,
     description: siteConfig.description,
+    card: "summary_large_image",
     creator: "@_luisFilipePT",
-    images: og.src,
   },
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    images: og.src,
-    authors: ["Luis Filipe"],
     url: "https://code-scope.vercel.app/",
-    locale: "en_GB",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://code-scope.vercel.app/og.jpg",
+        width: 1200,
+        height: 628,
+      },
+    ],
   },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
 }
 
